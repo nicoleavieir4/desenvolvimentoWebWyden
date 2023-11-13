@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino</title>
+    <link rel="stylesheet" href="./cassino.css">
+</head>
+<body>
+    <head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">	
+        <title>SlotMachine2</title>
+    </head>
+<body>
+    <div id = "frame">
+		<div id="jackpot">JackPot!</div>
+			<h1 id = "msg">Welcome!</h1>
+			<h2 id="cred">Insert Credits!</h2>
+			<div id="outline">
+				<div id = "box"><img id = "myimg0" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/bar.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg1" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/seven.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg2" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/spade.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg3" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/star.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg4" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/aple.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg5" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/bell.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg6" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/jota.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg7" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/queen.png" width="100" height="100"></div>
+				<div id = "box"><img id = "myimg8" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/king.png" width="100" height="100"></div>
+			</div>
+			<button id = "btn" type="button" onclick="testa()">SPIN!</button>
+			<div id="outline">
+				<div id = "box">
+        		<img id = "Prize" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/king.png" width="100" height="100">
+        		<p>Lucky Draw!</p>
+        		</div>
+			</div>
+			<audio loop id="audio0" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/THROWING%20KNIFE%20HITMARKER.mp3"></audio>
+			<audio id="audio1" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/BOOM%20SWOOSH.mp3"></audio>
+			<audio id="audio2" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/DING.mp3"></audio>
+			<audio id="audio3" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/VICTORY.mp3"></audio>
+			<audio loop id="audio4" src="https://raw.githubusercontent.com/jpcruz6000/Ca-a-Niquel/master/BOXING%20GLOVES%20BY%20JULIO%20KLADNIEW.mp3"></audio>	
+    </div>       
+		<div id = "footer">
+			<button id="coin"  type="button" onclick="coinPay(20)">$5$</button>
+			<button id="coin" type="button" onclick="coinPay(50)">$10$</button>
+			<button id="coin" type="button" onclick="coinPay(150)">$25$</button>
+			<p>20 cred - 50 cred - 150 cred</p>
+		</div>     
+</body>
+<script src="./cassino.js"></script>
+</body>
+</html>

@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu de Jogos</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nicole Alves</title>
+    <link rel="stylesheet" href="./portnicole.css">
+</head>
+
+<body>
     <header>
-      <h1>Menu de Jogos</h1>
+        <div class="profile">
+            <img src="profile-picture.jpg" alt="Nicole Alves Vieira">
+            <h1>Meu Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-      <div class="game-menu">
-        <div class="game-item" onclick="openPacman()">Pac-Man</div>
-        <div class="game-item" onclick="openTicTacToe()">Jogo da Velha</div>
-        <div class="game-item" onclick="openPingPong()">Ping Pong</div>
-        <div class="game-item" onclick="openCasino()">Cassino</div>
-        <div class="game-item" onclick="openCardGames()">Jogos de Cartas</div>
-      </div>
-      <div class="game-container" id="game-container">
-        <!-- Área de exibição do jogo -->
-      </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+    <section id="about">
+        <div class="about-me">
+            <h2>Sobre Mim</h2>
+            <p>
+                Welcome to my creative world! I'm Your Name, a passionate creator exploring the art of web design
+                and development. Join me on a journey of innovation and imagination.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project-item" onmouseover="animateProject(this)">
+                <img src="project.jpg" alt="Project 1">
+                <h3>Games</h3>
+                <p>Site de Jogos Online.</p>
+                <a href="./project.html" target="_blank">Veja o Projeto</a>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h2>Contato</h2>
+            <p>Email: nicoleavieira@icloud.com</p>
+            <p>Phone: (19) 9 9445-4587</p>
+            <p>LinkedIn: linkedin.com/in/nicoleavieira</p>
+            <p>GitHub: github.com/nicoleavieir4</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nicole Alves Vieira. All rights reserved.</p>
+    </footer>
+
+    <script src="portnicole.js"></script>
+</body>
+
 </html>

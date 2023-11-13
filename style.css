@@ -1,235 +1,61 @@
 body {
-  background-color: black;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(to right, #330033, #660066, #330033);
+  color: white;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(51, 0, 51, 0.8);
   padding: 20px;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2em;
 }
 
 main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 80vh;
 }
 
 .game-menu {
-  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 .game-item {
-  cursor: pointer;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-.game-container {
-  width: 400px;
-  height: 400px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #0d0c0c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Simulações de jogos */
-.pacman-css,
-.pacman-css::before,
-.pacman-css::after {
   width: 200px;
   height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.pacman-css {
-  position: relative;
+.game-item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
-.pacman-css::before,
-.pacman-css::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 50%,
-    yellow 50%
-  );
-}
-
-.pacman-css::before {
-  transform: rotate(180deg);
-  animation: anima-pacman-cima 0.5s infinite;
-}
-
-.pacman-css::after {
-  animation: anima-pacman-baixo 0.5s infinite;
-}
-
-@keyframes anima-pacman-cima {
-  0% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(150deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes anima-pacman-baixo {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* Simulação do Ping Pong */
-/* Simulação do Ping Pong */
-/* Simulação do Ping Pong */
-.ping-pong-simulation {
-  width: 100px;
-  height: 100px;
-  background-color: #f18d05;
-  animation: bounce_ball 3s linear infinite;
-  /* position: center; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-}
-
-@keyframes bounce_ball {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(80px) translateY(90px);
-  }
-  50% {
-    transform: translateX(10);
-  }
-  75% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(2);
-  }
-}
-
-@-webkit-keyframes left_wall {
-  0% {margin-top:0px;}
-  25%{margin-top:200px}
-  100%{margin-top:0px}
-}
-
-/* .wrapper {
-  margin: 0 auto;
-  width: 600px;
-  height: 300px;
-  border-bottom: 30px solid #d0d102;
-} */
-/* .clear {
-  clear: both;
-}
-.left_wall {
-  float: left;
-  width: 30px;
-  height: 100px;
-  background: #61ae24;
-  -webkit-animation: left-wall 3s infinite;
-}
-.right_wall {
-  float: right;
-  width: 30px;
-  height: 100px;
-  background: #61ae24;
-  -webkit-animation: right-wall 3s infinite;
-}
-.ball {
-  float: left;
-  width: 50px;
-  height: 50px;
-  background: #f18d05;
-  border-radius: 50%;
-  margin-top: 30px;
-  -webkit-animation: bounce_ball 3s linear infinite;
-}
-@-webkit-keyframes left-wall {
-  0% {
-    margin-top: 0px;
-  }
-  25% {
-    margin-top: 200px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
-@-webkit-keyframes right-wall {
-  0% {
-    margin-top: 200px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: 200px;
-  }
-}
-@-webkit-keyframes bounce_ball {
-  0% {
-    margin-top: 30px;
-  }
-  25% {
-    margin-left: 250px;
-    margin-top: 252px;
-  }
-  50% {
-    margin-left: 490px;
-    margin-top: 30px;
-  }
-  75% {
-    margin-left: 250px;
-    margin-top: 252px;
-  }
-  100% {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-} */
-
-.casino-simulation {
-  /* Defina a animação para o Cassino aqui */
-}
-
-.card-games-simulation {
-  /* Defina a animação para Jogos de Cartas aqui */
+.game-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
